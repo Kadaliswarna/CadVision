@@ -1,0 +1,6 @@
+; AutoCAD Command Script for iQOO CADVision
+; Usage: In AutoCAD type SCRIPT and select this file, or drag into drawing window
+_DXFIN
+ZOOM
+_E
+_REGEN

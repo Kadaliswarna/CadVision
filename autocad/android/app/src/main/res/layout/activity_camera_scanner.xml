@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- CameraX Viewfinder -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Custom CAD Reticle & Dimensions Overlay -->
+    <com.iqoo.cadvision.views.CadOverlayView
+        android:id="@+id/cadOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top Header Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#CC070A11"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/text_primary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Optical CAD Scanner"
+            android:textColor="@color/accent_cyan"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="12dp" />
+
+        <TextView
+            android:id="@+id/tvMarkerSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target: 50mm"
+            android:textColor="@color/accent_iqoo"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:background="#33FFB800"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp" />
+    </LinearLayout>
+
+    <!-- Bottom Controls -->
+    <LinearLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="#CC070A11"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textColor="@color/text_secondary"
+            app:strokeColor="@color/border_subtle"
+            android:layout_marginEnd="20dp" />
+
+        <!-- Capture & Analyze Button -->
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="160dp"
+            android:layout_height="56dp"
+            android:text="@string/capture_object"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:backgroundTint="@color/accent_cyan"
+            app:cornerRadius="28dp" />
+    </LinearLayout>
+
+    <!-- Loading Overlay -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

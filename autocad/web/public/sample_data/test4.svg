@@ -1,0 +1,8 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg" style="background: #333;">
+  <circle cx="200" cy="150" r="100" fill="#bbb" stroke="#999" stroke-width="2"/>
+  <circle cx="200" cy="150" r="40" fill="#333" stroke="#222" stroke-width="2"/>
+  <circle cx="200" cy="70" r="15" fill="#333" stroke="#222" stroke-width="2"/>
+  <circle cx="200" cy="230" r="15" fill="#333" stroke="#222" stroke-width="2"/>
+  <circle cx="120" cy="150" r="15" fill="#333" stroke="#222" stroke-width="2"/>
+  <circle cx="280" cy="150" r="15" fill="#333" stroke="#222" stroke-width="2"/>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.IQOOCADVision" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_cyan</item>
+        <item name="colorPrimaryVariant">#00B4D8</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSecondary">@color/accent_iqoo</item>
+        <item name="colorSecondaryVariant">#FF9500</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:colorBackground">@color/bg_main</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/bg_main</item>
+        <item name="android:navigationBarColor">@color/bg_main</item>
+    </style>
+</resources>

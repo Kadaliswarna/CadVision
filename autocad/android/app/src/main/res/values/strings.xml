@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">iQOO CADVision</string>
+    <string name="tagline">Real World → Intelligent CAD</string>
+    <string name="scan_object">Scan Object</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="view_previous_scans">View Previous Scans</string>
+    <string name="pc_connection">PC Server Connection</string>
+    <string name="server_ip_hint">e.g. 192.168.1.100</string>
+    <string name="port_hint">8000</string>
+    <string name="connect">Connect</string>
+    <string name="connected">● Connected</string>
+    <string name="disconnected">○ Disconnected</string>
+    <string name="capture_object">Capture &amp; Measure</string>
+    <string name="reference_marker_size">Reference Marker: 50 mm</string>
+    <string name="generate_dxf">GENERATE AUTOCAD DXF</string>
+    <string name="download_dxf">Download DXF</string>
+</resources>
